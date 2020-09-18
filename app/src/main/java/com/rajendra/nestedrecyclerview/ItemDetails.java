@@ -1,6 +1,7 @@
 package com.rajendra.nestedrecyclerview;
 
 import androidx.appcompat.app.AppCompatActivity;
+
 import android.os.Bundle;
 
 public class ItemDetails extends AppCompatActivity {

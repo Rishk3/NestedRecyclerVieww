@@ -28,10 +28,18 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         Button verticalBtn=(Button) findViewById(R.id.vertical_btn);
+        Button item_desc_btn=(Button) findViewById(R.id.detail_btn);
         verticalBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent= new Intent(MainActivity.this,VerticalList.class);
+                startActivity(intent);
+            }
+        });
+        item_desc_btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent= new Intent(MainActivity.this,ItemDetails.class);
                 startActivity(intent);
             }
         });
